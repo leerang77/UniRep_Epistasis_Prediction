@@ -7,7 +7,7 @@ Protein sequence embeddings learned from large unsupervised deep learning models
 UniRep docker container was cloned from [github repository](https://github.com/churchlab/UniRep). The embedding can only be calculated one at a time, so parallel computing was necessary to calculate the embeddings of 536,962 mutants. Custom script was used to batch the mutants, calculate the embeddings, and write to output files. To run the jobs on MIT engaging cluster, Singularity image of the docker container was created and used. The stability data for GB1 mutants was obtained in an excel file from the supplementary materials of Olson et al. The data and embeddings were used to train a Lasso regression model for stability prediction.
 
 #### To reproduce
-Clone this repository. Download and unzip data from google drive link[https://drive.google.com/file/d/1MSmOt9F-kxa4Mh3EotLL1eY7iSbSKCtY/view?usp=share_link]. Launch Project.ipynb. If you want to generate the embeddings, then use the .py files in /Utils folder. More details to be added later.
+Clone this repository. Download and unzip data from google drive [link](https://drive.google.com/file/d/1MSmOt9F-kxa4Mh3EotLL1eY7iSbSKCtY/view?usp=share_link). Launch Project.ipynb. If you want to generate the embeddings, then use the .py files in /Utils folder. More details to be added later.
 
 #### References
 1. Olson, C. Anders, Nicholas C. Wu, and Ren Sun. A comprehensive biophysical description of pairwise epistasis throughout an entire protein domain. Current biology 24.22, 2643-2651 (2014). https://doi.org/10.1016/j.cub.2014.09.072
